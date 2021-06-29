@@ -1,6 +1,6 @@
-print('Calculate the sum of two numbers!')
+print('Multiply two numbers!')
 first_numb = float(input('Type the first number: '))
 second_numb = float(input('Type the second number: '))
 
-result = first_numb + second_numb
+result = first_numb * second_numb
 print(result)
