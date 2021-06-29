@@ -34,18 +34,3 @@ print(throw_length)
 #   throw_length -> 21.493474365706778
 # angle_degree=45.1:
 #   throw_length -> 21.4874765380616
-
-
-# 3.
-bar_length = 10
-current_number = 100
-total_numb = 100
-
-loaded_part = current_number/total_numb
-remaining_part = (total_numb-current_number)/total_numb
-loaded_length = loaded_part * bar_length
-remaining_length = remaining_part * bar_length
-
-loaded = '=' * (round(loaded_length)-1)
-remaining = ' ' * round(remaining_length)
-print(f'|{loaded}>{remaining}|')
