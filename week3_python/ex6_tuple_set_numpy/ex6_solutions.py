@@ -93,5 +93,3 @@ upper_idx = round(n*(1-alpha/2)-1)
 
 print(f'lower limit = {my_sorted_list[lower_idx]}')
 print(f'uppper limti = {my_sorted_list[upper_idx]}')
-
-
