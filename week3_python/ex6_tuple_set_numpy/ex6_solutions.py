@@ -83,6 +83,7 @@ print(throw_length.shape)
 max_throw_length = np.max(throw_length, axis = 1)
 print(max_throw_length.shape)
 
+# calculate numerical confidence interval
 alpha = 0.05
 my_sorted_list = sorted(max_throw_length)
 
