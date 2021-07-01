@@ -35,6 +35,39 @@ else:
 print(result)
 
 # 2
+month_short = "Jan"
+
+month_full = None
+if month_short == "Jan":
+    month_full = "January"
+elif month_short == "Feb":
+    month_full = "February"
+elif month_short == "Dec":
+    month_full = "December"
+elif month_short == "Mar":
+    month_full = "March"
+elif month_short == "Apr":
+    month_full = "April"
+elif month_short == "May":
+    month_full = "May"
+elif month_short == "Jun":
+    month_full = "June"
+elif month_short == "Jul":
+    month_full = "July"
+elif month_short == "Aug":
+    month_full = "August"
+elif month_short == "September":
+    month_full = "September"
+elif month_short == "October":
+    month_full = "October"
+elif month_short == "Nov":
+    month_full = "November"
+else:
+    month_full = "Unknow"
+
+print(month_full)
+
+# 4
 import random
 
 dice1 = random.randint(1,6)
@@ -48,7 +81,7 @@ all_dice_equal = (dice1==dice2) and (dice1==dice3) and (dice1==dice4) and (dice1
 if all_dice_equal:
     print('Yahtzee')
 
-# 3
+# 5
 bar_length = 10
 current_number = 100
 total_numb = 100
