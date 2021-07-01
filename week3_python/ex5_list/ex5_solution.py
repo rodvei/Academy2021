@@ -38,14 +38,14 @@ dice = [1,2,3,4,5,6]
 n_dices = 5
 rand_dices = random.choices(dice, k=5)
 
-all_equal = (rand_dices[0]==rand_dices[1]) and ((rand_dices[0]==rand_dices[2])) and (rand_dices[0]==rand_dices[3]) and (rand_dices[0]==rand_dices[4]) and (rand_dices[0]==rand_dices[5])
+all_equal = (rand_dices[0]==rand_dices[1]) and (rand_dices[0]==rand_dices[2])) and (rand_dices[0]==rand_dices[3]) and (rand_dices[0]==rand_dices[4])
 
 if all_equal:
     print('Yahtzee!')
 
-print(f'The lowest value is {min(all_equal)}')
-print(f'The biggest value is {max(all_equal)}')
-print(f'Dices, sorted: {sorted(all_equal)}')
+print(f'The lowest value is {min(rand_dices)}')
+print(f'The biggest value is {max(rand_dices)}')
+print(f'Dices, sorted: {sorted(rand_dices)}')
 
 
 # 3.

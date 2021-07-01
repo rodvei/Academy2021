@@ -42,8 +42,6 @@ if month_short == "Jan":
     month_full = "January"
 elif month_short == "Feb":
     month_full = "February"
-elif month_short == "Dec":
-    month_full = "December"
 elif month_short == "Mar":
     month_full = "March"
 elif month_short == "Apr":
@@ -56,12 +54,14 @@ elif month_short == "Jul":
     month_full = "July"
 elif month_short == "Aug":
     month_full = "August"
-elif month_short == "September":
+elif month_short == "Sep":
     month_full = "September"
-elif month_short == "October":
+elif month_short == "Oct":
     month_full = "October"
 elif month_short == "Nov":
     month_full = "November"
+elif month_short == "Dec":
+    month_full = "December"
 else:
     month_full = "Unknow"
 
