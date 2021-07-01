@@ -68,4 +68,22 @@ for date, date_data in data.items():
 print(f'On {date_of_max_val} we had the largest stock prie of {max_value}')
 
 # g)
+data_len = len(data)
+count_stock_increase = 0
+count_stock_increase_follow = 0
+last_increase = False
+for date, date_data in data.items():
+    if date_data['Close']>date_data['Open']:
+        count_stock_increase += 1
+        if last_increase:
+            count_stock_increase_follow += 1
+        last_increase = True
+    else:
+        last_increase = False
+print(f'Probability of stock increase {count_stock_increase/data_len}')
+# 0.545454
+
+print(f'Probability of subsequently increase {count_stock_increase_follow/count_stock_increase}')
+# 0.43478
+# So for this limited dataset the theory does not hole True
 
