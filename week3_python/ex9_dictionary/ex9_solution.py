@@ -30,6 +30,7 @@ while is_running:
         for key, value in input_dict.items():
             revert_dict[value] = key
         print(revert_dict)
+        is_running = False
     else:
         key, value = user_input.split(';')
         clean_key = key.strip()
@@ -81,3 +82,4 @@ my_test = {'a':1}
 my_test = set_by_path(my_test, ['b', 'c', 'd'], 2)
 print(my_test)
 
+# 5. self designed project based on API
